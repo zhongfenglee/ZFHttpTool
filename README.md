@@ -21,7 +21,9 @@
 +(UIImage *)SDWebImage_downLoadImageWithURLString:(NSString *)URLString placeholder:(NSString *)placeholder;
 ```
 ## 使用
-直接下载这两个文件，拖入到你的项目中，然后`#import"ZFHttpTool"`
+直接下载这两个文件，拖入项目中
+
+`#import"ZFHttpTool"`
 
 示例-使用AFNetworking发送POST请求：
 ```    
