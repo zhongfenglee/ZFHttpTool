@@ -6,7 +6,21 @@
 
 在开发中，很多地方会用到网络功能，若在这些地方直接使用这些网络框架，将来这些框架有了新版，项目中可能需更新网络框架，只需来到ZFHttpTool.m文件中进行更新即可（不用满项目中寻找那些用到这些框架的地方），方便快捷。
 
-## 使用方法
+```
+// AFNetworking发送网络请求
++(void)AFNetworking_GetWithURLString:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure;
++(void)AFNetworking_PostWithURLString:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure;
+
+// Apple自带的发送网络请求
++(void)NSURLSession_GetWithURLString:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure;
++(void)NSURLSession_PostWithURLString:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure;
+
+// 利用SDWebImage下载图片
++(void)SDWebImage_downLoadImageForImageView:(UIImageView *)imageView URLString:(NSString *)URLString placeholder:(NSString *)placeholder;
++(void)SDWebImage_downLoadImageForButton:(UIButton *)button URLString:(NSString *)URLString placeholder:(NSString *)placeholder state:(UIControlState)state;
++(UIImage *)SDWebImage_downLoadImageWithURLString:(NSString *)URLString placeholder:(NSString *)placeholder;
+```
+## 使用
 直接下载这两个文件，拖入到你的项目中，然后`#import"ZFHttpTool"`
 
 示例-使用AFNetworking发送POST请求：
