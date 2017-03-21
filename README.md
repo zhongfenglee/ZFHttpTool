@@ -8,6 +8,19 @@
 
 ## 使用方法
 直接下载这两个文件，拖入到你的项目中，然后 #import"ZFHttpTool"
+
+```    
+    [HttpTool AFNetworking_PostWithURLString:/*your URLString*/ parameters:/*your paramsDict*/ success:^(id responseObject) {
+        // 请求成功，返回数据
+        NSLog(@"responseObject:%@",responseObject);
+        // 处理数据...
+        
+    } failure:^(NSError *error) {
+        // 请求失败，错误处理
+        NSLog(@"error:%@",error.localizedDescription);
+    }];
+```
+
 ## 联系我
 如果您觉得此项目还不错，请为我加星，非常感谢，🙏！ 如果您有什么疑问/建议，欢迎联系我，🙏！
 
