@@ -7,8 +7,9 @@
 在开发中，很多地方会用到网络功能，若在这些地方直接使用这些网络框架，将来这些框架有了新版，项目中可能需更新网络框架，只需来到ZFHttpTool.m文件中进行更新即可（不用满项目中寻找那些用到这些框架的地方），方便快捷。
 
 ## 使用方法
-直接下载这两个文件，拖入到你的项目中，然后 #import"ZFHttpTool"
+直接下载这两个文件，拖入到你的项目中，然后`#import"ZFHttpTool"`
 
+示例-使用AFNetworking发送POST请求：
 ```    
     [HttpTool AFNetworking_PostWithURLString:/*your URLString*/ parameters:/*your paramsDict*/ success:^(id responseObject) {
         // 请求成功，返回数据
