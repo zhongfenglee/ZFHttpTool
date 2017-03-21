@@ -27,15 +27,15 @@
 
 示例-使用AFNetworking发送POST请求：
 ```    
-    [HttpTool AFNetworking_PostWithURLString:/*your URLString*/ parameters:/*your paramsDict*/ success:^(id responseObject) {
-        // 请求成功，返回数据
-        NSLog(@"responseObject:%@",responseObject);
-        // 处理数据...
-        
-    } failure:^(NSError *error) {
-        // 请求失败，错误处理
-        NSLog(@"error:%@",error.localizedDescription);
-    }];
+[HttpTool AFNetworking_PostWithURLString:/*your URLString*/ parameters:/*your paramsDict*/ success:^(id responseObject) {
+    // 请求成功，返回数据
+    NSLog(@"responseObject:%@",responseObject);
+    // 处理数据...
+
+} failure:^(NSError *error) {
+    // 请求失败，错误处理
+    NSLog(@"error:%@",error.localizedDescription);
+}];
 ```
 
 ## 联系我
